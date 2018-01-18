@@ -6,7 +6,11 @@ import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.Date;
 import java.sql.Timestamp;
-
+/**
+ * 用例表
+ * @author Administrator
+ *
+ */
 public class Caselist implements Serializable {
 
     private static final long serialVersionUID = -972786808689136607L;
