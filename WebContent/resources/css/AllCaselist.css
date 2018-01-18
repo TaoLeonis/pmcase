@@ -15,14 +15,13 @@ table {
     table-layout: fixed;
 }
 th,td {
-    /*width: 10px;*/
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 .casename {
-    /*width: 100px;*/
+    width:50px;
     text-align: left;
 }
 .table>tbody>tr>td {
@@ -50,10 +49,10 @@ th,td {
     background-color: #5cb85c;
 }
 #flt0_caselists {
-    width: 612px;
+    width: 495px;
 }
 #flt1_caselists, #flt2_caselists, #flt3_caselists {
-    width: 95px;
+    width: 145px;
 }
 #flt4_caselists {
     width: 42px;

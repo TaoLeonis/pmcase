@@ -16,7 +16,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" id="title" href="${pageContext.request.contextPath}/my">项目进度管理系统</a>
+      <a class="navbar-brand" id="title" href="${pageContext.request.contextPath}/my">项目跟踪管理系统</a>
       <img id="Brand" alt="Brand" src="/images/capture_bug.png" style="height: 50px; width: 50px;">
     </div>
     <div id="navbar" class="navbar-collapse collapse">
@@ -31,7 +31,7 @@
         <li <c:if test="${active_newTask == true}">class="active"</c:if>><a href="${pageContext.request.contextPath}/task/newTaskForm">新建任务</a></li>
         <li <c:if test="${active_newCase == true}">class="active"</c:if>><a href="${pageContext.request.contextPath}/caselist/newCaselistForm">新建用例</a></li>
         <li <c:if test="${active_allCase == true}">class="active"</c:if>><a href="${pageContext.request.contextPath}/caselist/all">查看用例</a></li>
-        <li <c:if test="${active_fileUpload == true}">class="active"</c:if>><a href="${pageContext.request.contextPath}/fileupload">自列用例</a></li>
+<%--         <li <c:if test="${active_fileUpload == true}">class="active"</c:if>><a href="${pageContext.request.contextPath}/fileupload">自列用例</a></li> --%>
         <li <c:if test="${active_chart == true}">class="active"</c:if>><a href="${pageContext.request.contextPath}/task/chart">执行质量</a></li>
         <sec:authorize access="isAuthenticated()">
           <sec:authentication property="principal.account" var="account" />

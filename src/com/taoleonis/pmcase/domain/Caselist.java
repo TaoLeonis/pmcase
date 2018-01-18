@@ -8,7 +8,7 @@ import java.util.Date;
 import java.sql.Timestamp;
 /**
  * 用例表
- * @author Administrator
+ * @author zhoutao
  *
  */
 public class Caselist implements Serializable {

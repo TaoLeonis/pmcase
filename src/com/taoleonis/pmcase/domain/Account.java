@@ -39,4 +39,11 @@ public class Account implements Serializable {
 
     public void setRole(String role) { this.role = role; }
 
+	@Override
+	public String toString() {
+		return "Account [username=" + username + ", password=" + password + ", email=" + email + ", role=" + role + "]";
+	}
+    
+    
+
 }

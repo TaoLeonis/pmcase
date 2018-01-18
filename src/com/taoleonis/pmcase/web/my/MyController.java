@@ -41,6 +41,7 @@ public class MyController {
 	@RequestMapping(value = "my", method = RequestMethod.GET)
 	public String my(ModelMap model) throws Exception {
 		UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		System.out.println(userDetails.getAccount().toString());
 		String username = userDetails.getAccount().getUsername();
 		String role = userDetails.getAccount().getRole();
 		if (role.equals("admin") || role.equals("cs")) {
@@ -57,8 +58,6 @@ public class MyController {
 		});
 		model.addAttribute("taskMap", taskMap);
 
-		//
-
 		List<Taskcase> allTaskcase = taskcaseService.getAllTaskcase();
 		Map<String, List<Taskcase>> taskcaseMap = new HashMap<String, List<Taskcase>>();
 		for (Taskcase taskcase : allTaskcase) {
@@ -72,8 +71,6 @@ public class MyController {
 			}
 		}
 		model.addAttribute("taskcaseMap", taskcaseMap);
-
-		//
 
 		List<Caselist> allCaselist = caselistService.getAllCaselist();
 		Map<String, Caselist> caselistMap = Maps.uniqueIndex(allCaselist, new Function<Caselist, String>() {

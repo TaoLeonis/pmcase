@@ -23,19 +23,12 @@ public class AccountService {
         return accountMapper.getAllKFAccount();
     }
 
-    /*
-     * (non-Javadoc)
-     * @see ik.am.jpetstore.domain.service.account.AccountService#getAccount(java.lang.String, java.lang.String)
-     */
+
     
     public Account getAccount(String username, String password) {
         return accountMapper.getAccountByUsernameAndPassword(username, password);
     }
 
-    /*
-     * (non-Javadoc)
-     * @see ik.am.jpetstore.domain.service.account.AccountService#insertAccount(ik.am.jpetstore.domain.model.Account)
-     */
 
     @Transactional
     public void insertAccount(Account account) {
@@ -43,10 +36,6 @@ public class AccountService {
         accountMapper.insertSignon(account);
     }
 
-    /*
-     * (non-Javadoc)
-     * @see ik.am.jpetstore.domain.service.account.AccountService#updateAccount(ik.am.jpetstore.domain.model.Account)
-     */
 
     @Transactional
     public void updateAccount(Account account) {

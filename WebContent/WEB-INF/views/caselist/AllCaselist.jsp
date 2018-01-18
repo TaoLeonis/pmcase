@@ -118,7 +118,7 @@
             col_7: 'none',
             auto_filter: true,
             auto_filter_delay: 100,
-            col_widths: ['600px', '100px', '100px', '100px', '50px', '50px', '50px', '50px']
+            col_widths: ['500px', '150px', '150px', '150px', '50px', '50px', '50px', '50px']
         });
         tf.init();
     });
